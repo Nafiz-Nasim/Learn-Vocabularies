@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="bg-[#BADEFF] h-20 flex-row flex items-center justify-between">
+      <div class="left flex flex-row gap-1 items-center ml-10">
+        <h2 class="font-[Poppins]">English</h2>
+        <img src="assets/logo.png" alt="" />
+        <h2 class="font-[Hind Siliguri]">জানালা</h2>
+      </div>
+      <div class="right hidden sm:flex flex-row gap-5 mr-5 justify-center">
+        <button
+          class="border-2 border-[#422AD5] px-5 rounded-md py-1 flex items-center justify-between gap-2"
+        >
+          <img src="assets/fa-circle-question.png" alt="question" />
+          <h2 class="font-[Poppins] text-[#422AD5] font-semibold">FAQ</h2>
+        </button>
+        <button
+          class="border-2 border-[#422AD5] px-5 rounded-md py-2 flex items-center justify-between gap-2"
+        >
+          <img src="assets/fa-book-open.png" alt="question" />
+          <h2 class="font-[Poppins] text-[#422AD5] font-semibold">Learn</h2>
+        </button>
+        <button
+          class="border-2 border-[#422AD5] px-5 rounded-md py-3 flex items-center justify-between gap-2"
+        >
+          <img src="assets/fa-arrow-right-from-bracket.png" alt="question" />
+          <h2 class="font-[Poppins] text-[#422AD5] font-semibold">Logout</h2>
+        </button>
+      </div>
+    </nav>
+    <!-- hero section -->
+    <section
+      class="hero-section mx-5 sm:max-w-2xl lg:max-w-6xl sm:mx-auto lg:mx-auto sm:flex sm:flex-row-reverse sm:py-20"
+    >
+      <!-- right part -->
+      <div class="img"><img src="assets/hero-student.png" alt="" /></div>
+
+      <!-- left part  -->
+
+      <div class="text flex flex-col justify-center">
+        <h2 class="text-blue-500 text-2xl font-bold sm:text-4xl">
+          English <span class="text-black">is Easy!!</span>
+        </h2>
+        <p class="mt-5">
+          আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+          আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+          অন্য একটি Level এ
+        </p>
+      </div>
+    </section>
+    <!-- leasons sections -->
+<section class=" mt-10 mx-5 sm:max-w-2xl lg:max-w-6xl sm:mx-auto lg:mx-auto flex flex-col items-center justify-center ">
+<div class="text flex flex-col justify-center items-center">
+        <h2 class="text-blue-500 text-2xl font-bold sm:text-4xl">
+             Let's <span class="text-black"> Learn Vocabularies</span>
+        </h2>
+       
+      </div>
+      <!-- for the buttons -->
+      <div class="buttonsDiv  mt-5 sm:mt-10 flex items-center justify-center flex-wrap gap-5 " id="buttonsDiv">
+
+
+
+      </div>
+      <div class="buttonInfo my-20 flex flex-col items-center justify-center sm:flex-row  mx-5  flex-wrap gap-5 " id="buttonInfo" >
+    <div class="card rounded-3xl flex flex-col items-center justify-center bg-amber-200 w-96  h-40 mx-5">
+       <p class="mt-2">আপনি এখনো কোন Lesson Select করেন ন</p>
+        <h2 class=" text-2xl font-medium mt-2 ">একটি Lesson Select করুন।</h2>
+ 
+    
+
+     </div>
+
+      </div>
+ <!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_5.showModal()">open modal</button>
+<dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+     
+</section>
+
+ <script src="script.js"></script>
+  </body>
+</html>
